@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wbd_vol2.PracownikController">
+   <children>
+      <TableView fx:id="tablePracownik" layoutX="14.0" layoutY="15.0" prefHeight="293.0" prefWidth="573.0">
+        <columns>
+          <TableColumn fx:id="tableCollumnPracownikNrPracownika" prefWidth="34.0" text="Id" />
+          <TableColumn fx:id="tableCollumnPracownikImie" prefWidth="71.0" text="Imie" />
+            <TableColumn fx:id="tableCollumnPracownikNazwisko" prefWidth="86.0" text="Nazwisko" />
+            <TableColumn fx:id="tableCollumnPracownikDataZatrudnienia" prefWidth="109.0" text="Data zatrudnienia" />
+            <TableColumn fx:id="tableCollumnPracownikRodzajZatrudnienia" prefWidth="154.0" text="Rodzaj zatrudnienia" />
+            <TableColumn fx:id="tableCollumnPracownikNrTelefonu" prefWidth="118.0" text="Nr telefonu" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="326.0" text="Parametr wyszukiwania:" />
+      <TextField fx:id="wyszukajPracownikTextField" layoutX="207.0" layoutY="323.0" prefHeight="31.0" prefWidth="187.0" />
+      <Button fx:id="wyszukajPracownikButton" layoutX="397.0" layoutY="323.0" mnemonicParsing="false" onAction="#wyszukajPracownikButtonOnAction" text="Wyszukaj" />
+      <Button fx:id="dodajPracownikButton" layoutX="516.0" layoutY="323.0" mnemonicParsing="false" onAction="#dodajPracownikButtonOnAction" text="Dodaj" />
+      <Label layoutX="14.0" layoutY="361.0" text="Nr pracownika do usunięcia:" />
+      <TextField fx:id="usunPracownikTextField" layoutX="207.0" layoutY="356.0" />
+      <Button fx:id="usunPracownikButton" layoutX="397.0" layoutY="357.0" mnemonicParsing="false" onAction="#usunPracownikButtonOnAction" text="Usuń" />
+      <Button fx:id="zaktualizujPracownikButton" layoutX="504.0" layoutY="357.0" mnemonicParsing="false" onAction="#zaktualizujPracownikButtonOnAction" text="Zaktualizuj" />
+   </children>
+</AnchorPane>

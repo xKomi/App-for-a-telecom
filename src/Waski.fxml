@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wbd_vol2.WaskiController">
+   <children>
+      <TableView fx:id="waskiTable" layoutX="14.0" layoutY="14.0" prefHeight="304.0" prefWidth="568.0">
+        <columns>
+          <TableColumn fx:id="tableCollumnWaskiNrKlienta" prefWidth="39.0" text="Id" />
+          <TableColumn fx:id="tableCollumnWaskiImie" prefWidth="148.0" text="Imie" />
+            <TableColumn fx:id="tableCollumnWaskiNazwisko" prefWidth="91.0" text="Nazwisko" />
+            <TableColumn fx:id="tableCollumnWaskiPESEL" prefWidth="143.0" text="PESEL" />
+            <TableColumn fx:id="tableCollumnWaskiNrTelefonu" prefWidth="146.0" text="Nr telefonu" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="349.0" text="Parametr wyszukiwania:" />
+      <TextField fx:id="waskiTextField" layoutX="163.0" layoutY="345.0" />
+      <Button fx:id="wyszukajWaskiButton" layoutX="410.0" layoutY="345.0" mnemonicParsing="false" onAction="#wyszukajWaskiButtonOnAction" text="Wyszukaj" />
+      <Button fx:id="wylogujWaskiButton" layoutX="505.0" layoutY="345.0" mnemonicParsing="false" onAction="#wylogujWaskiButtonOnAction" text="Wyloguj" />
+   </children>
+</AnchorPane>

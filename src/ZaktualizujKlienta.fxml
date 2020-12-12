@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="293.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wbd_vol2.ZaktualizujKlientaController">
+   <children>
+      <Label layoutX="67.0" layoutY="72.0" text="Id klienta:" />
+      <Label layoutX="66.0" layoutY="106.0" text="Imię:" />
+      <Label layoutX="67.0" layoutY="138.0" text="Nazwisko:" />
+      <Label layoutX="66.0" layoutY="172.0" text="PESEL:" />
+      <Label layoutX="66.0" layoutY="206.0" text="Nr telefonu:" />
+      <Label layoutX="64.0" layoutY="226.0" />
+      <TextField fx:id="zauktualizujKlientIdTextField" layoutX="177.0" layoutY="68.0" />
+      <TextField fx:id="zaktualizujKlientImieTextField" layoutX="177.0" layoutY="102.0" />
+      <TextField fx:id="zaktualizujKlientNazwiskoTextField" layoutX="177.0" layoutY="134.0" />
+      <TextField fx:id="zaktualizujKlientPESELTextField" layoutX="177.0" layoutY="168.0" />
+      <TextField fx:id="zaktualizujKlientNrTelefonuTextField" layoutX="177.0" layoutY="202.0" />
+      <Button fx:id="zaktualizujKlientButton" layoutX="464.0" layoutY="202.0" mnemonicParsing="false" onAction="#zaktualizujKlientButtonOnAction" text="Zaktualizuj" />
+      <Label layoutX="181.0" layoutY="14.0" text="Aktualizacja klienta">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="wyczyscZaktualizujKlientButton" layoutX="375.0" layoutY="202.0" mnemonicParsing="false" onAction="#wyczyscZaktualizujKlientButtonOnAction" text="Wyczyść" />
+   </children>
+</AnchorPane>
